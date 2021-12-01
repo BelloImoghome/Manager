@@ -1,0 +1,21 @@
+﻿@model Manager.ViewModel.RandomContactViewModel
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Contact.Name</h2>
+@if (Model.Clients.Count == 0)
+{
+    <p>No contact for this client</p>
+}
+else
+{
+    <ul>
+        @foreach (var client in Model.Clients)
+        {
+            <li>@client.Name</li>
+        }
+    </ul>
+}

@@ -1,0 +1,4 @@
+packages/*
+Manager/bin/*
+Manager/obj/*
+.vs/*
